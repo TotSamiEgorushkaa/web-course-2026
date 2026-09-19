@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f4f5f7;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#task-input:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  background-color: #e5e7eb;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #d1d5db;
+}
+
+#add-btn {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+#add-btn:hover {
+  background-color: #0052a3;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 12px;
+}
+
+.filters {
+  display: flex;
+  gap: 4px;
+}
+
+.filter-btn.active {
+  background-color: #0066cc;
+  color: #ffffff;
+}
+
+.stats {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.task-list {
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 6px;
+  border-bottom: 1px solid #f0f0f0;
+  gap: 10px;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.task-text {
+  word-break: break-word;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.delete-btn {
+  background: transparent;
+  color: #cc0000;
+  padding: 4px 8px;
+  font-size: 0.85rem;
+}
+
+.delete-btn:hover {
+  background-color: #fee2e2;
+}
