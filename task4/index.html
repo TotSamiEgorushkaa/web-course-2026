@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная 4: Быки и коровы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Игра «Быки и коровы»</h1>
+    <p>Компьютер загадал 4 цифры (без повторов). Попробуй угадать!</p>
+
+    <div class="game-panel">
+        <input type="text" id="guessInput" placeholder="Введите 4 цифры" maxlength="4">
+        <button id="checkBtn">Проверить</button>
+        <button id="newGameBtn">Новая игра</button>
+    </div>
+
+    <div id="messageBox" class="message"></div>
+    
+    <h3>История попыток:</h3>
+    <ul id="historyList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
