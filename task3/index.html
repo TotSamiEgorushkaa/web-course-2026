@@ -15,12 +15,15 @@
       <input type="text" id="task-input" placeholder="Что нужно сделать?" autofocus>
       <button id="add-btn" type="button">Добавить</button>
     </div>
+    <div><input type = 'checkbox' id = "cbx_start">Задача завершена?</input></div>
 
+
+
+
+    <hr>
     <div class="controls">
       <div class="filters">
-        <button class="filter-btn active" data-filter="all">Все</button>
-        <button class="filter-btn" data-filter="active">Активные</button>
-        <button class="filter-btn" data-filter="completed">Завершённые</button>
+        <input type = 'checkbox' id="cbx_completed">Показать только завершённые задачи</input>
       </div>
       <div class="stats" id="stats-counter">
         Осталось: 0, Выполнено: 0
