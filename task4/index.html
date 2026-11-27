@@ -2,24 +2,30 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Лабораторная 4: Быки и коровы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная №4: Быки и Коровы</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Игра «Быки и коровы»</h1>
-    <p>Компьютер загадал 4 цифры (без повторов). Попробуй угадать!</p>
+    <div class="container">
+        <h1>Быки и Коровы</h1>
+        <p class="rules">Компьютер загадал 4-значное число с неповторяющимися цифрами.<br>Попробуйте угадать его!</p>
+        
+        <div class="controls">
+            <input type="text" id="guessInput" placeholder="Введите 4 цифры" maxlength="4" autocomplete="off">
+            <button id="checkBtn">Проверить</button>
+            <button id="newGameBtn" class="secondary">Новая игра</button>
+        </div>
 
-    <div class="game-panel">
-        <input type="text" id="guessInput" placeholder="Введите 4 цифры" maxlength="4">
-        <button id="checkBtn">Проверить</button>
-        <button id="newGameBtn">Новая игра</button>
+        <div id="message" class="message"></div>
+
+        <div class="stats">
+            <span>Попыток: <strong id="attemptsCount">0</strong></span>
+        </div>
+
+        <h2>История попыток</h2>
+        <ul id="historyList" class="history"></ul>
     </div>
-
-    <div id="messageBox" class="message"></div>
-    
-    <h3>История попыток:</h3>
-    <ul id="historyList"></ul>
-
     <script src="script.js"></script>
 </body>
 </html>
